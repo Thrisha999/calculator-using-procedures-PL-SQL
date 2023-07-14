@@ -1,0 +1,23 @@
+create or replace procedure calculator(a int,b int, c char)
+is
+begin
+	if c='+' then
+		dbms_output.put_line(a+b);
+	else if c='-' then 
+		dbms_output.put_line(a-b);
+	else if c='*' then 
+		dbms_output.put_line(a*b);
+	else if c='/' then 
+		dbms_output.put_line(a/b);
+	else if c='%' then
+		dbms_output.put_line(mod(a,b));
+	else
+		dbms_output.put_line(0);
+	end if;
+	end if;
+	end if;
+	end if;
+	end if;
+end;
+/
+
